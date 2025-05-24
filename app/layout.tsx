@@ -4,9 +4,11 @@ import "./globals.css";
 
 import { AuroraBackground } from "../components/aurora-background";
 import Navbar from "@/components/Navbar";
+import Slider from "@/components/Slider";
+import About from "@/components/About";
+import Services from "@/components/Services";
 
-
-const inter = Inter()
+const inter = Inter();
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,13 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} antialiased`}
-      >
+      <body className={`${inter.className} antialiased`}>
         <Navbar></Navbar>
-        <AuroraBackground> 
-          {children}
-        </AuroraBackground> 
+        <AuroraBackground>{children}</AuroraBackground>
+        <About />
+        <Services />
       </body>
     </html>
   );
