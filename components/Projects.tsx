@@ -35,8 +35,6 @@ const Projects = () => {
     },
   ];
 
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
     AOS.init({
       // Global settings:
