@@ -1,7 +1,7 @@
 {
   "name": "portfolio-david",
   "version": "0.1.0",
-  "homepage": "https://github.com/davidnovicic/davidnovicic.github.io.git",
+  "homepage": "https://github.com/davidnovicic/david-portfolio.git",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
