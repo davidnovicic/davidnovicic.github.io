@@ -74,16 +74,23 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="">
-      <div className="pt-[4rem] md:pt-[8rem] pb-40 bg-black flex flex-col items-center">
-        <h1 className="mb-25 text-5xl text-zinc-200"> Projects </h1>
+    <div className="bg-black py-20">
+      <h1
+        data-aos="fade-right"
+        data-aos-delay="500"
+        className="ml-95 text-5xl text-zinc-200"
+      >
+        {" "}
+        Projects{" "}
+      </h1>
 
+      <div className="pt-[4rem] md:pt-[4rem] pb-10 bg-black place-items-center">
         <div className="bg-black gap-x-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-6 w-[60%] rounded-4xl">
           {images.slice(0, count).map((image, index) => {
             return (
               <div
                 data-aos="fade-left"
-                data-aos-delay="500"
+                data-aos-delay="600"
                 key={index}
                 className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 bg-zinc-900 h-[450px] pt-10 p-4 rounded-2xl overflow-hidden mx-auto place-items-center items-center"
               >
