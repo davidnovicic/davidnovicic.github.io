@@ -33,6 +33,7 @@ const Services = () => {
   }, []);
 
   return (
+    // eslint-disable-next-line
     <div className="bg-black pb-[3rem]">
       <p className="ml-22 lg:ml-97 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
         {" "}

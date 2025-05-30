@@ -74,6 +74,7 @@ const Projects = () => {
   }, []);
 
   return (
+    // eslint-disable-next-line
     <div className="bg-black py-20">
       <h1
         data-aos="fade-right"

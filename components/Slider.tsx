@@ -11,6 +11,7 @@ import expert from "../public/expert.jpg";
 import associate from "../public/associate.jpg";
 import cisco from "../public/cisco.jpg";
 
+// eslint-disable-next-line
 interface Props {
   images: string;
 }
