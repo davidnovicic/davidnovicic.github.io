@@ -1,4 +1,3 @@
-import Slider from "@/components/Slider";
 import { Button } from "../components/ui/button";
 
 export default function Home() {
@@ -16,18 +15,16 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-gray-400 text-lg text-pretty mt-10">
-            This page contains information about how can I help you and what can
-            you expect from me. My name is David, I help and advise people
-            regarding{" "}
+            This is a portfolio page. My name is David. My occupation is
+            technology. <br /> I provide services regarding{" "}
             <span className="bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500 text-transparent font-semibold">
-              {" "}
-              technology.{" "}
-            </span>
+              cloud, networking and software development.
+            </span>{" "}
           </p>
           <div className="space-x-3 mt-14">
             <Button
               variant="default"
-              className="rounded-lg bg-gray-400 hover:bg-gray-300 text-black"
+              className="rounded-lg bg-gray-200 hover:bg-gray-300 text-black"
             >
               {" "}
               More info{" "}

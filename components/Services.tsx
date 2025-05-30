@@ -1,111 +1,104 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import azurelogo from "../public/azurelogo.jpg";
-import mern from "../public/mern.jpg";
-import saas from "../public/saas.jpg";
-import webdev from "../public/webdev.jpg";
-import webdeveloping from "../public/webdeveloping.jpg";
+import React, { useEffect } from "react";
+import logo from "../public/logo.jpg";
+import frontend from "../public/frontend.jpg";
+import project1 from "../public/project1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  }, []);
+
   return (
-    <div className="mb-30 w-full h-150 mt-20">
-      <h2 className=" text-gray-500 text-left ml-25 text-5xl font-semibold">
+    <div className="bg-black pb-[3rem]">
+      <p className="ml-22 lg:ml-97 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
         {" "}
-        Those are some of{" "}
-        <span className="text-gray-900">
+        <span className="bg-clip-text text-zinc-300 semi-bold ">
           {" "}
-          many
-          <br />
+          My Services{" "}
         </span>{" "}
-        <span className=""> services my team and I could help you with. </span>
-      </h2>
-      <div className="space-x-3 mt-20 flex justify-center items-center">
-        <div className="text-3xl w-210 h-110 text-gray-400 relative ">
-          <button className="bottom-10 ml-75 rounded-4xl absolute bg-blue-500 hover:bg-blue-800 text-white text-sm w-30 h-10 z-10">
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[60%] mx-auto items-center justify-center gap-[3rem] mt-[3rem] text-zinc-300">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          className="rounded-2xl h-[380px] bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+        >
+          {" "}
+          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
             {" "}
-            Learn More{" "}
-          </button>
-          <button className="bottom-10 ml-110 rounded-4xl absolute bg-blue-500 hover:bg-blue-800 text-white text-sm w-30 h-10 z-10">
-            {" "}
-            Contact{" "}
-          </button>
-          <Image
-            src={saas}
-            alt=""
-            className="h-full w-full object-center brightness-50"
-          />{" "}
-          {/* <h1 className="ml-10 mt-7">
-            {" "}
-            <span className="text-xl"> Got ideas for software, </span>
-            <br />
-            <span className="text-2xl font-semibold">
-              {" "}
-              we can make it TRUE through SaaS{" "}
-            </span>
-          </h1> */}
-        </div>
-
-        <div className="text-left text-3xl w-210 h-110 text-gray-800 relative items-center">
-          <button className="ml-75 bg-blue-500 hover:bg-blue-800 rounded-4xl w-30 h-10 text-white text-sm absolute z-10 bottom-10">
-            Learn more
-          </button>
-          <button className="ml-110 bg-blue-500 hover:bg-blue-800 rounded-4xl w-30 h-10 text-white  text-sm absolute z-10 bottom-10">
-            {" "}
-            Contact{" "}
-          </button>
-          <Image
-            src={webdev}
-            alt=""
-            className="h-full w-full object-center brightness-60"
-          />
-
-          {/* 
-            <h1 className="mt-7 ml-10">
-              <span className="text-xl ">
-                Find and choose any website and we can make it yours,
-                <br />
-                or let us
-                <span className="text-3xl font-semibold"> Design it. </span>
-              </span>
-            </h1> */}
-        </div>
-        {/* <div className=" text-3xl w-150 h-110 text-gray-800 rounded-4xl">
-          <Image
-            src={azurelogo}
-            alt=""
-            className="h-full w-full object-none brightness-50 "
-          />
-          <h1 className="mt-7 text-left ml-10">
-            {" "}
-            <span className="text-xl">Find out how </span>
-            <span className="text-2x text-blue-500 font-semibold">
-              {" "}
-              Azure,{" "}
-            </span>
-            <br />
-            <span> can help you achieve your goals. </span>
+            Frontend{" "}
           </h1>
-        </div> */}
-        {/* <div className="text-3xl w-150 h-110 text-gray-800 rounded-4xl">
-          <Image
-            src={saas}
-            alt=""
-            className="w-full h-full object-none brightness-60 "
-          />
-
-          <h1 className="mt-7 ml-10 text-left">
+          <div className="items-center justify-center flex pb-6">
             {" "}
-            <span className="text-2xl font-semibold"> MERN </span>{" "}
-            <span className="text-xl"> Stack, </span>
-            <br />
-            <span className="text-xl">
-              {" "}
-              get your modern e-commerce{" "}
-              <span className="text-2xl font-semibold "> Online Shop </span> and
-              get your business to the next level.{" "}
-            </span>
+            <Image src={frontend} alt="" width={70} />
+          </div>
+          <p className="text-[15px] ">
+            {" "}
+            Gain an advantage by owning a modern website built with the latest
+            technologies and solutions, taking your website—and your business—to
+            the next level.
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          className="rounded-2xl h-[380px] items-center justify-center bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+        >
+          {" "}
+          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
+            {" "}
+            Azure
           </h1>
-        </div> */}
+          <div className="items-center justify-center flex pb-6">
+            <Image src={logo} alt="" width={70} className="" />
+          </div>
+          <p className="text-[15px]">
+            "Microsoft Azure provides cutting-edge solutions for securing,
+            backing up, and ensuring your business remains highly reliable."
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="700"
+          className="rounded-2xl bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem] h-[380px]"
+        >
+          {" "}
+          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
+            {" "}
+            MERN stack{" "}
+          </h1>
+          <div className="items-center justify-center flex pb-6">
+            <Image src={project1} alt="" width={170} className="" />
+          </div>
+          <p className="text-[15px] pb-4 ">
+            {" "}
+            E-commerce website - online shop where you can sell your products
+          </p>
+        </div>
       </div>
     </div>
   );

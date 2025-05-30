@@ -8,6 +8,11 @@ import Slider from "@/components/Slider";
 import About from "@/components/About";
 import Services from "@/components/Services";
 
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import SecondSlider from "@/components/SecondSlider";
+
 const inter = Inter();
 
 export const metadata: Metadata = {
@@ -25,8 +30,15 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <Navbar></Navbar>
         <AuroraBackground>{children}</AuroraBackground>
-        <About />
         <Services />
+        <Skills />
+        <SecondSlider />
+        <Projects />
+
+        <Footer />
+
+        {/* <About />
+         */}
       </body>
     </html>
   );

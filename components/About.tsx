@@ -13,7 +13,10 @@ const About = () => {
               Certificates,
             </span>{" "}
             <br />
-            <span className="text-xl -ml-4"> i got over past few years.</span>
+            <span className="text-xl -ml-8">
+              {" "}
+              i got over the past few years.
+            </span>
           </p>
           <div className="">
             <Slider />
