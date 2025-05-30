@@ -34,9 +34,6 @@ export default function RootLayout({
         <Projects />
 
         <Footer />
-
-        {/* <About />
-         */}
       </body>
     </html>
   );
