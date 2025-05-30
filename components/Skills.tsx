@@ -1,8 +1,6 @@
 import React from "react";
 import SkillsItem from "./SkillsItem";
 
-import SecondSlider from "./SecondSlider";
-
 const Skills = () => {
   return (
     <div className="bg-black pb-7">

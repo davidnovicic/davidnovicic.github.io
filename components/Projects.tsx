@@ -5,9 +5,6 @@ import project1 from "../public/project1.jpg";
 import project2 from "../public/project2.jpg";
 import project3 from "../public/project3.jpg";
 import project4 from "../public/project4.jpg";
-import project5 from "../public/project5.jpg";
-import project6 from "../public/project5.jpg";
-import project7 from "../public/project5.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -51,7 +48,7 @@ const Projects = () => {
       }
     }, 250);
     return () => clearInterval(interval);
-  }, [images]);
+  }, [images, count]);
 
   useEffect(() => {
     AOS.init({

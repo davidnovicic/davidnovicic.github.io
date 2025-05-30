@@ -4,8 +4,6 @@ import "./globals.css";
 
 import { AuroraBackground } from "../components/aurora-background";
 import Navbar from "@/components/Navbar";
-import Slider from "@/components/Slider";
-import About from "@/components/About";
 import Services from "@/components/Services";
 
 import Skills from "@/components/Skills";
@@ -13,7 +11,7 @@ import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import SecondSlider from "@/components/SecondSlider";
 
-const inter = Inter();
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
