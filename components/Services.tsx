@@ -78,8 +78,8 @@ const Services = () => {
             <Image src={logo} alt="" width={70} className="" />
           </div>
           <p className="text-[15px]">
-            "Microsoft Azure provides cutting-edge solutions for securing,
-            backing up, and ensuring your business remains highly reliable."
+            Microsoft Azure provides cutting-edge solutions for securing,
+            backing up, and ensuring your business remains highly reliable.
           </p>
         </div>
         <div

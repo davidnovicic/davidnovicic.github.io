@@ -38,19 +38,6 @@ const Projects = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let counter = count;
-    const interval = setInterval(() => {
-      if (counter >= images.length) {
-        clearInterval(interval);
-      } else {
-        setCount((count) => count + 1);
-        counter++;
-      }
-    }, 250);
-    return () => clearInterval(interval);
-  }, [images, count]);
-
-  useEffect(() => {
     AOS.init({
       // Global settings:
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -78,7 +65,7 @@ const Projects = () => {
     <div className="bg-black py-20">
       <h1
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="600"
         className="ml-95 text-5xl text-zinc-200"
       >
         {" "}
@@ -87,11 +74,11 @@ const Projects = () => {
 
       <div className="pt-[4rem] md:pt-[4rem] pb-10 bg-black place-items-center">
         <div className="bg-black gap-x-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-6 w-[60%] rounded-4xl">
-          {images.slice(0, count).map((image, index) => {
+          {images.map((image, index) => {
             return (
               <div
                 data-aos="fade-left"
-                data-aos-delay="600"
+                data-aos-delay="800"
                 key={index}
                 className="transform cursor-pointer hover:-translate-y-4 transition-all duration-500 bg-zinc-900 h-[450px] pt-10 p-4 rounded-2xl overflow-hidden mx-auto place-items-center items-center"
               >
