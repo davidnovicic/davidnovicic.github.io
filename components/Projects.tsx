@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import project1 from "../public/project1.jpg";
 import project2 from "../public/project2.jpg";
 import project3 from "../public/project3.jpg";
