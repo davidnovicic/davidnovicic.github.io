@@ -4,7 +4,7 @@ interface Props {
   title: string;
   year: string;
   des: string;
-  moreInfo: Function;
+  moreInfo: any;
   stateInfo: boolean;
 }
 
