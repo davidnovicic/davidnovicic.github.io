@@ -4,7 +4,7 @@ interface Props {
   title: string;
   year: string;
   des: string;
-  moreInfo: any;
+  moreInfo: () => void;
   stateInfo: boolean;
 }
 
@@ -25,7 +25,7 @@ const SkillsItem = ({ title, year, des, moreInfo, stateInfo }: Props) => {
         {des}
       </p>
       <button
-        onClick={() => moreInfo(!stateInfo)}
+        onClick={() => moreInfo()}
         className=" mt-10 bg bg-gray-300 text-zinc-800 text-sm rounded-full w-[85px] h-[30px] overflow-hidden"
       >
         {" "}

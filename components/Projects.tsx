@@ -28,7 +28,7 @@ const Projects = () => {
 
   const [moreInfo, setMoreInfo] = useState(-1);
 
-  const handleInfo = (divId: any) => {
+  const handleInfo = (divId: number) => {
     setMoreInfo(divId);
   };
 
