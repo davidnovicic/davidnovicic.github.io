@@ -1,7 +1,7 @@
 import React from "react";
-import { FaMapMarkedAlt } from "react-icons/fa";
-import { IoIosPhonePortrait } from "react-icons/io";
-import { MdOutlineMailOutline } from "react-icons/md";
+// import { FaMapMarkedAlt } from "react-icons/fa";
+// import { IoIosPhonePortrait } from "react-icons/io";
+// import { MdOutlineMailOutline } from "react-icons/md";
 
 const Footer = () => {
   return (

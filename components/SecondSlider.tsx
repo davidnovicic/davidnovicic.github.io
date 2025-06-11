@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+
 import { motion } from "motion/react";
 
 import azure from "../public/azure.jpg";
