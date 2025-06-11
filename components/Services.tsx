@@ -33,8 +33,8 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="bg-black pb-[3rem]">
-      <p className="ml-22 lg:ml-97 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
+    <div id="Services" className="bg-black pb-[3rem]">
+      <p className="ml-22 lg:ml-107 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
         {" "}
         <span className="bg-clip-text text-zinc-300 semi-bold ">
           {" "}

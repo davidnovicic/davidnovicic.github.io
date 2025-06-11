@@ -10,6 +10,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import SecondSlider from "@/components/SecondSlider";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
         <Skills />
         <SecondSlider />
         <Projects />
-
+        <Contact />
         <Footer />
       </body>
     </html>
