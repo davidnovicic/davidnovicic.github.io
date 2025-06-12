@@ -33,8 +33,8 @@ const Services = () => {
   }, []);
 
   return (
-    <div id="Services" className="bg-black pb-[3rem]">
-      <p className="ml-22 lg:ml-107 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
+    <div id="Services" className="bg-black pb-[3rem] overflow-x-hidden">
+      <p className="ml-22 lg:ml-97 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
         {" "}
         <span className="bg-clip-text text-zinc-300 semi-bold ">
           {" "}
@@ -45,7 +45,7 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="200"
-          className="rounded-2xl h-[380px] bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+          className="rounded-2xl h-[380px] bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
         >
           {" "}
           <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
@@ -66,7 +66,7 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="500"
-          className="rounded-2xl h-[380px] items-center justify-center bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+          className="rounded-2xl h-[380px] items-center justify-center bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
         >
           {" "}
           <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
@@ -84,7 +84,7 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="700"
-          className="rounded-2xl bg-zinc-800 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem] h-[380px]"
+          className="rounded-2xl bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem] h-[380px]"
         >
           {" "}
           <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">

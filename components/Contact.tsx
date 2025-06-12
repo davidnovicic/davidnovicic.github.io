@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
 
         <div className="py-30 -ml-3 flex flex-col md:w-[450px] md:h-[600px] ">
-          <h2 className="text-4xl text-white mt-5"> Contact Me </h2>
+          <h2 className="text-4xl text-white mt-15"> Contact Me </h2>
           <div className="pt-3">
             <p className="text-white">
               {" "}

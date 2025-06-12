@@ -80,7 +80,7 @@ const Projects = () => {
                     <div
                       data-aos="fade-left"
                       data-aos-delay="800"
-                      className="-mt-1 md:-mt-3 relative h-[270px] bg-zinc-800  hover:scale-105 transform transition-all duration-700 font-semibold"
+                      className="-mt-1 md:-mt-1 -ml-1 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold rounded-2xl"
                     >
                       <Image
                         src={image.src}
@@ -90,7 +90,7 @@ const Projects = () => {
                       />
                       <button
                         onClick={() => handleInfo(index)}
-                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-110 hover:scale-105 hover:bg-gray-400 active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
+                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-120 duration-100 hover:scale-120 hover:bg-zinc-900 hover:text-white active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
                       >
                         {" "}
                         More Info
@@ -112,19 +112,19 @@ const Projects = () => {
             {" "}
             <button
               onClick={() => handleInfo(-1)}
-              className="ml-25 md:ml-95 bg-zinc-800 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
+              className="ml-10 md:ml-95 bg-zinc-900 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
             >
               {" "}
               <FaArrowLeftLong />{" "}
             </button>{" "}
           </Link>
-          <div className="ml-3 md:ml-103 bg-black mt-3 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 w-[40%]">
+          <div className=" ml-3 md:ml-103 bg-black mt-3 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 w-[40%]">
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="mt-2 ml-25 md:-ml-7 bg-zinc-800 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
+              className="hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
             >
-              <div className="mt-10 ml-10">
+              <div className=" mt-10 ml-10">
                 <h1 className="text-xl md:text-3xl text-zinc-200 font-semibold">
                   {" "}
                   Marketing Agency{" "}
@@ -147,7 +147,7 @@ const Projects = () => {
                   />
                   <a
                     className="text-zinc-300 underline"
-                    href="https://www.youtube.com/"
+                    href="https://marketing-agency-blush.vercel.app/"
                   >
                     {" "}
                     link to the website{" "}
@@ -168,12 +168,12 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="ml-27 md:ml-70 mt-7 md:mt-12 w-[270px] "
+              className="ml-10 md:ml-75 mt-7 md:mt-12 w-[270px] "
             >
               <h1 className="ml-1 text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
                 Real Estate Website
               </h1>
-              <div className="-mt-1 md:-mt-3 relative h-[270px] bg-zinc-800  hover:scale-105 transform transition-all duration-700 font-semibold">
+              <div className="-mt-1 md:-mt-3 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold">
                 <Image
                   src={project4}
                   alt=""
@@ -201,13 +201,13 @@ const Projects = () => {
             {" "}
             <button
               onClick={() => handleInfo(-1)}
-              className="ml-25 md:ml-95 bg-zinc-800 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
+              className="ml-10 md:ml-95 bg-zinc-800 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
             >
               {" "}
               <FaArrowLeftLong />{" "}
             </button>{" "}
           </Link>
-          <div className="w-[40%] ml-27 md:ml-98 bg-black pt-2 md:pt-10 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="w-[40%] ml-12 md:ml-98 bg-black pt-2 md:pt-10 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="">
               <h1 className="mt-1 md:mt-10 text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
                 Marketing Agency
@@ -215,7 +215,7 @@ const Projects = () => {
               <div
                 data-aos="fade-left"
                 data-aos-delay="400"
-                className="-mt-1 relative h-[270px] w-[280px] bg-zinc-800  hover:scale-105 transform transition-all duration-100 font-semibold"
+                className="-mt-1 relative h-[270px] w-[280px] bg-zinc-900  hover:scale-105 transform transition-all duration-100 font-semibold"
               >
                 <Image
                   src={project2}
@@ -235,9 +235,9 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="mt-7 md:mt-14 md:ml-30 bg-zinc-800 w-[340px] h-[400px] md:w-[500px] md:h-[300px] "
+              className="hover:scale-105 duration-500 mt-7 md:mt-14 md:ml-30 bg-zinc-900 w-[340px] h-[400px] md:w-[500px] md:h-[300px] "
             >
-              <div className="py-10 mt-7 md:py-1 ml-10 ">
+              <div className=" py-10 mt-7 md:py-1 ml-10  ">
                 <h1 className="text-2xl md:text-3xl text-zinc-200 font-semibold">
                   {" "}
                   Real Estate{" "}
@@ -249,8 +249,8 @@ const Projects = () => {
                 <p className="my-3 mt-3 text-zinc-400 text-sm md:text-[15px] ">
                   Place where you can rent, buy or sell real estate.
                   <br />
-                  You will be able to login using google account and manage your
-                  profile page and your real estate from there.
+                  You will be able to login using google account <br /> and
+                  manage your profile page and your real estate from there.
                 </p>
                 <div className="flex items-center -ml-6">
                   <Image
@@ -260,7 +260,7 @@ const Projects = () => {
                   />
                   <a
                     className="text-zinc-300 underline"
-                    href="https://www.youtube.com/"
+                    href="https://realtor-clone-first.vercel.app/"
                   >
                     {" "}
                     link to the website{" "}

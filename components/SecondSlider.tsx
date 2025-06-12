@@ -13,7 +13,7 @@ const SecondSlider = () => {
   const images = [azure, expert, associate, cisco];
 
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-x-hidden py-10">
       <div className="bg-black md:pt-[1rem] flex w-[80%] md:w-[60%] mx-auto overflow-hidden">
         <motion.div
           initial={{ x: 0 }}

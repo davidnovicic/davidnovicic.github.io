@@ -1,9 +1,12 @@
 import { Button } from "../components/ui/button";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen w-full flex items-center justify-center bg-black">
+      <div className="min-h-screen w-full flex items-center justify-center bg-black ">
         <div className="mt-40 text-center space-y-5 max-w-2xl z-10 h-[50%]">
           {/* <p className="py-1 px-2 backdrop-blur-sm font-light bg-transparent text-gray-200 inline-block"> 
           Hello! This is my portfolio page
@@ -22,17 +25,32 @@ export default function Home() {
             </span>{" "}
           </p>
           <div className="space-x-3 mt-14">
-            <Button
-              variant="default"
-              className="rounded-lg bg-gray-200 hover:bg-gray-300 text-black"
-            >
-              {" "}
-              More info{" "}
-            </Button>
-            <Button variant="secondary" className="rounded-lg ">
-              {" "}
-              Contact{" "}
-            </Button>
+            <Link href="#About">
+              <Button
+                variant="default"
+                className="rounded-lg hover:bg-transparent bg-gray-200 hover:border-1 hover:text-white text-black"
+              >
+                {" "}
+                More info{" "}
+              </Button>
+            </Link>
+
+            <Link href="#Contact">
+              <Button
+                variant="secondary"
+                className="rounded-lg text-white bg-transparent hover:bg-gray-200 hover:text-black border-1 "
+              >
+                {" "}
+                Contact{" "}
+              </Button>
+            </Link>
+
+            <Link href="https://github.com/davidnovicic">
+              <FaGithub className="text-white text-4xl ml-41 mt-5 md:-mt-9 md:ml-150 absolute" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/david-novicic-zdravkovic-433060296/">
+              <FaLinkedin className=" text-white text-4xl ml-54 mt-5 md:-mt-9 md:ml-139" />
+            </Link>
           </div>
         </div>
       </div>

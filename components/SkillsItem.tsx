@@ -26,7 +26,7 @@ const SkillsItem = ({ title, year, des, moreInfo, stateInfo }: Props) => {
       </p>
       <button
         onClick={() => moreInfo()}
-        className=" mt-10 bg bg-gray-300 text-zinc-800 text-sm rounded-full w-[85px] h-[30px] overflow-hidden"
+        className=" group-hover:translate-x-1 group-hover:-translate-y-1 hover:scale-120  hover:bg-transparent hover:border-1 duration-300 hover:text-white mt-10 bg bg-gray-300 text-zinc-800 text-sm rounded-full w-[85px] h-[30px]"
       >
         {" "}
         {stateInfo ? "More Info" : "Hide"}{" "}
