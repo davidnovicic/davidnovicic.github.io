@@ -17,9 +17,9 @@ const Skills = () => {
           {" "}
           Education & <span> Skill </span>{" "}
         </h1>
-        <div className="w-[100%] items-center justify-center pt-[4rem] md:pt-[5rem] grid grid-col-1 md:grid-cols-2 gap-[2rem]">
+        <div className=" w-[100%] items-center justify-center pt-[4rem] md:pt-[5rem] grid grid-col-1 md:grid-cols-2 gap-[2rem]">
           <div
-            className={`bg-zinc-900 ${
+            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[450px] md:w-[560px] md:h-[480px]"
@@ -34,7 +34,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 ${
+            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[540px] md:w-[560px] md:h-[480px]"
@@ -49,7 +49,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 ${
+            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[470px] md:w-[560px] md:h-[460px]"
@@ -64,7 +64,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 ${
+            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[450px] md:w-[560px] md:h-[460px]"

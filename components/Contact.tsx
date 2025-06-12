@@ -17,7 +17,7 @@ const Contact = () => {
     >
       <div className=" mx-auto grid grid-col-1 md:grid-cols-2 w-[60%]">
         <div className="flex place-items-center">
-          <div className="absolute z-10 flex flex-col ml-12 mt-10 ">
+          <div className="absolute z-10 flex flex-col ml-12 mt-17 ">
             <div className="flex -ml-5 md:ml-5">
               <div className=" md:w-[6.5.rem] md:h-[6.5rem] w-[5rem] h-[5rem]  rounded-full">
                 <FaMapMarkedAlt className="md:w-[4rem] md:h-[2rem] w-[2.5rem] h-[2.5rem] text-white" />

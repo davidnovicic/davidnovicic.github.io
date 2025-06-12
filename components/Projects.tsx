@@ -59,11 +59,11 @@ const Projects = () => {
     <div className="overflow-x-hidden">
       {moreInfo === -1 && (
         <div className="">
-          <div id="Projects" className=" bg-black py-10">
+          <div id="Projects" className=" bg-black py-7">
             <h1
               data-aos="fade-right"
               data-aos-delay="600"
-              className="text-zinc-300 ml-25 md:ml-95 py-20 text-5xl"
+              className="text-zinc-300 ml-22 md:ml-95 py-20 text-5xl"
             >
               {" "}
               Projects{" "}
@@ -90,7 +90,7 @@ const Projects = () => {
                       />
                       <button
                         onClick={() => handleInfo(index)}
-                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-120 duration-100 hover:scale-120 hover:bg-zinc-900 hover:text-white active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
+                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-120 duration-100 hover:scale-120 hover:text-white active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-zinc-800 text-white rounded-full outline-none transition-all text-xs"
                       >
                         {" "}
                         More Info
@@ -122,7 +122,7 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
+              className="rounded-lg hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
             >
               <div className=" mt-10 ml-10">
                 <h1 className="text-xl md:text-3xl text-zinc-200 font-semibold">
@@ -168,12 +168,12 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="ml-10 md:ml-75 mt-7 md:mt-12 w-[270px] "
+              className=" ml-10 md:ml-75 mt-7 md:mt-12 w-[270px] "
             >
               <h1 className="ml-1 text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
                 Real Estate Website
               </h1>
-              <div className="-mt-1 md:-mt-3 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold">
+              <div className="rounded-lg -mt-1 md:-mt-3 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold">
                 <Image
                   src={project4}
                   alt=""
@@ -215,7 +215,7 @@ const Projects = () => {
               <div
                 data-aos="fade-left"
                 data-aos-delay="400"
-                className="-mt-1 relative h-[270px] w-[280px] bg-zinc-900  hover:scale-105 transform transition-all duration-100 font-semibold"
+                className="rounded-lg -mt-1 relative h-[270px] w-[280px] bg-zinc-900  hover:scale-105 transform transition-all duration-100 font-semibold"
               >
                 <Image
                   src={project2}
@@ -235,7 +235,7 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="hover:scale-105 duration-500 mt-7 md:mt-14 md:ml-30 bg-zinc-900 w-[340px] h-[400px] md:w-[500px] md:h-[300px] "
+              className="rounded-lg hover:scale-105 duration-500 mt-7 md:mt-14 md:ml-30 bg-zinc-900 w-[340px] h-[400px] md:w-[500px] md:h-[300px] "
             >
               <div className=" py-10 mt-7 md:py-1 ml-10  ">
                 <h1 className="text-2xl md:text-3xl text-zinc-200 font-semibold">
