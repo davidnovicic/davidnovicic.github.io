@@ -55,9 +55,9 @@ const Footer = () => {
     //   </div>
     // </div>
 
-    <div className="bg-black py-10 overflow-x-hidden">
-      <div className="bg-black border-t-1  border-zinc-300 w-[60%] mx-auto items-center place-items-left">
-        <div className="bg-black pt-5 text-[13px] md:text-[20px] text-white opacity-30">
+    <div className="bg-black dark:bg-white py-10 overflow-x-hidden">
+      <div className="bg-black border-t-1 dark:bg-white  border-zinc-300 w-[60%] mx-auto items-center place-items-left">
+        <div className="bg-black dark:bg-white pt-5 text-[13px] md:text-[20px] text-white dark:text-black opacity-30">
           Developed by Davidn | All Rights Reserved
         </div>
       </div>

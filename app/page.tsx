@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen w-full flex items-center justify-center bg-black ">
+      <div className="min-h-screen w-full flex items-center justify-center bg-black dark:bg-white ">
         <div className="mt-40 text-center space-y-5 max-w-2xl z-10 h-[50%]">
           {/* <p className="py-1 px-2 backdrop-blur-sm font-light bg-transparent text-gray-200 inline-block"> 
           Hello! This is my portfolio page
@@ -17,7 +17,7 @@ export default function Home() {
               Welcome{" "}
             </h1>
           </div>
-          <p className="text-gray-400 text-lg text-pretty mt-10">
+          <p className="text-gray-400 text-lg text-pretty mt-10 dark:text-black">
             This is a portfolio page. My name is David. My occupation is
             technology. <br /> I provide services regarding{" "}
             <span className="bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500 text-transparent font-semibold">
@@ -38,7 +38,7 @@ export default function Home() {
             <Link href="#Contact">
               <Button
                 variant="secondary"
-                className="rounded-lg text-white bg-transparent hover:bg-gray-200 hover:text-black border-1 "
+                className="rounded-lg text-white bg-transparent hover:bg-gray-200 hover:text-black border-1 dark:text-black "
               >
                 {" "}
                 Contact{" "}
@@ -46,10 +46,10 @@ export default function Home() {
             </Link>
 
             <Link href="https://github.com/davidnovicic">
-              <FaGithub className="text-white text-4xl ml-41 mt-5 md:-mt-9 md:ml-150 absolute" />
+              <FaGithub className="text-white text-4xl ml-41 mt-5 md:-mt-9 md:ml-150 absolute dark:text-black" />
             </Link>
             <Link href="https://www.linkedin.com/in/david-novicic-zdravkovic-433060296/">
-              <FaLinkedin className=" text-white text-4xl ml-54 mt-5 md:-mt-9 md:ml-139" />
+              <FaLinkedin className=" text-white dark:text-black text-4xl ml-54 mt-5 md:-mt-9 md:ml-139" />
             </Link>
           </div>
         </div>

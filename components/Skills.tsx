@@ -11,15 +11,15 @@ const Skills = () => {
   }
 
   return (
-    <div id="About" className="bg-black pb-7 overflow-x-hidden ">
+    <div id="About" className="bg-black dark:bg-white pb-7 overflow-x-hidden ">
       <div className="pt-[4rem] md:pt-[3rem] mx-auto w-[100%] md:w-[60%] items-top ">
-        <h1 className="text-center justify-center text-zinc-300 text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
+        <h1 className="text-center justify-center text-zinc-300 dark:text-black text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
           {" "}
           Education & <span> Skill </span>{" "}
         </h1>
         <div className=" w-[100%] items-center justify-center pt-[4rem] md:pt-[5rem] grid grid-col-1 md:grid-cols-2 gap-[2rem]">
           <div
-            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
+            className={`bg-zinc-900 dark:bg-gray-100 rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[450px] md:w-[560px] md:h-[480px]"
@@ -34,7 +34,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
+            className={`bg-zinc-900 dark:bg-gray-100  rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[540px] md:w-[560px] md:h-[480px]"
@@ -49,7 +49,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
+            className={`bg-zinc-900 dark:bg-gray-100  rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[470px] md:w-[560px] md:h-[460px]"
@@ -64,7 +64,7 @@ const Skills = () => {
             />
           </div>
           <div
-            className={`bg-zinc-900 rounded-3xl md:rounded-none ${
+            className={`bg-zinc-900 dark:bg-gray-100  rounded-3xl md:rounded-none ${
               moreInfo
                 ? "w-[320px] h-[370px] md:w-[560px] md:h-[380px]"
                 : "w-[400px] h-[450px] md:w-[560px] md:h-[460px]"

@@ -11,6 +11,7 @@ import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import SecondSlider from "@/components/SecondSlider";
 import Contact from "@/components/Contact";
+import Switch from "@/components/Switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Projects />
         <Contact />
         <Footer />
+        <Switch />
       </body>
     </html>
   );

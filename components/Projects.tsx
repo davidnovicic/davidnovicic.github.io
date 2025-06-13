@@ -59,28 +59,28 @@ const Projects = () => {
     <div className="overflow-x-hidden">
       {moreInfo === -1 && (
         <div className="">
-          <div id="Projects" className=" bg-black py-7">
+          <div id="Projects" className=" bg-black dark:bg-white py-7">
             <h1
               data-aos="fade-right"
               data-aos-delay="600"
-              className="text-zinc-300 ml-22 md:ml-95 py-20 text-5xl"
+              className="text-zinc-300 dark:text-black ml-22 md:ml-95 py-20 text-5xl"
             >
               {" "}
               Projects{" "}
             </h1>
 
-            <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 md:w-[60%] mx-auto justify-center items-center gap-[3rem]">
+            <div className=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 md:w-[60%] mx-auto justify-center items-center gap-[3rem]">
               {images.map((image, index) => {
                 return (
                   <div key={index} className="">
-                    <h1 className=" text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
+                    <h1 className=" text-zinc-300 dark:text-black whitespace-nowrap text-[20px] md:text-[18px]">
                       {" "}
                       {image.name}{" "}
                     </h1>
                     <div
                       data-aos="fade-left"
                       data-aos-delay="800"
-                      className="-mt-1 md:-mt-1 -ml-1 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold rounded-2xl"
+                      className="mt-2 -ml-1 relative h-[270px] bg-zinc-900 dark:bg-gray-100  hover:scale-105 transform transition-all duration-700 font-semibold rounded-2xl"
                     >
                       <Image
                         src={image.src}
@@ -90,7 +90,7 @@ const Projects = () => {
                       />
                       <button
                         onClick={() => handleInfo(index)}
-                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-120 duration-100 hover:scale-120 hover:text-white active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-zinc-800 text-white rounded-full outline-none transition-all text-xs"
+                        className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-120 duration-100 hover:scale-120 hover:text-white active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-zinc-800 dark:text-white dark:bg-gray-500 text-white rounded-full outline-none transition-all text-xs"
                       >
                         {" "}
                         More Info
@@ -107,33 +107,33 @@ const Projects = () => {
       {/* Marketing Agency More Info div */}
 
       {moreInfo === 0 && (
-        <div className="bg-black py-12">
+        <div className="bg-black dark:bg-white py-33">
           <Link href="#Projects">
             {" "}
             <button
               onClick={() => handleInfo(-1)}
-              className="ml-10 md:ml-95 bg-zinc-900 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
+              className="ml-10 md:ml-95 bg-zinc-900 dark:bg-gray-800 text-zinc-300 dark:text-gray-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
             >
               {" "}
               <FaArrowLeftLong />{" "}
             </button>{" "}
           </Link>
-          <div className=" ml-3 md:ml-103 bg-black mt-3 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 w-[40%]">
+          <div className=" ml-3 md:ml-103 bg-black dark:bg-white mt-3 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 w-[40%]">
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="rounded-lg hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
+              className="rounded-lg hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 dark:bg-gray-100 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
             >
               <div className=" mt-10 ml-10">
-                <h1 className="text-xl md:text-3xl text-zinc-200 font-semibold">
+                <h1 className="text-xl md:text-3xl text-zinc-200 dark:text-black font-semibold">
                   {" "}
                   Marketing Agency{" "}
-                  <span className="text-xl md:text-3xl text-zinc-400">
+                  <span className="text-xl md:text-3xl text-zinc-400 dark:text-gray-500">
                     {" "}
                     Website{" "}
                   </span>{" "}
                 </h1>
-                <p className="my-3 text-zinc-400 text-[0.9rem] ">
+                <p className="my-3 text-zinc-400 dark:text-black text-[0.9rem] ">
                   Basic website with multiple pages, but modern and
                   representative, designed to attract future clients and get
                   your business to the next level.
@@ -146,7 +146,7 @@ const Projects = () => {
                     className="h-40 w-50 justify-center flex rounded-full"
                   />
                   <a
-                    className="text-zinc-300 underline"
+                    className="text-zinc-300 underline dark:text-black"
                     href="https://marketing-agency-blush.vercel.app/"
                   >
                     {" "}
@@ -155,11 +155,11 @@ const Projects = () => {
                 </div>
               </div>
               <div className="flex">
-                <p className="ml-10 bg-zinc-300 text-zinc-800 text-[0.7rem] rounded-full w-[50px] md:w-[75px] md:h-[25px] flex justify-center items-center">
+                <p className="ml-10 bg-zinc-300 text-zinc-800 dark:text-white dark:border dark:border-gray-400 dark:bg-zinc-900 text-[0.7rem] rounded-full w-[50px] md:w-[75px] md:h-[25px] flex justify-center items-center">
                   {" "}
                   REACT{" "}
                 </p>
-                <p className="ml-2 bg-zinc-300 text-zinc-800 text-[0.7rem] rounded-full w-[60px] md:w-[75px] md:h-[25px] flex justify-center items-center">
+                <p className="ml-2 bg-zinc-300 text-zinc-800 dark:bg-zinc-900 dark:border dark:border-gray-400 dark:text-white text-[0.7rem] rounded-full w-[60px] md:w-[75px] md:h-[25px] flex justify-center items-center">
                   {" "}
                   TAILWIND{" "}
                 </p>
@@ -170,10 +170,10 @@ const Projects = () => {
               data-aos-delay="400"
               className=" ml-10 md:ml-75 mt-7 md:mt-12 w-[270px] "
             >
-              <h1 className="ml-1 text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
+              <h1 className="ml-1 text-zinc-300 dark:text-zinc-900 whitespace-nowrap text-[20px] md:text-[18px]">
                 Real Estate Website
               </h1>
-              <div className="rounded-lg -mt-1 md:-mt-3 relative h-[270px] bg-zinc-900  hover:scale-105 transform transition-all duration-700 font-semibold">
+              <div className="rounded-lg -mt-1 md:-mt-3 relative h-[270px] bg-zinc-900 dark:bg-gray-100  hover:scale-105 transform transition-all duration-500 font-semibold">
                 <Image
                   src={project4}
                   alt=""
@@ -182,7 +182,7 @@ const Projects = () => {
                 />
                 <button
                   onClick={() => handleInfo(1)}
-                  className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-110 hover:scale-105 hover:bg-gray-400 active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
+                  className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-110 hover:scale-105 hover:bg-gray-400 active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 dark:text-white dark:bg-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
                 >
                   {" "}
                   More Info
@@ -196,57 +196,53 @@ const Projects = () => {
       {/* Real Estate More Info div */}
 
       {moreInfo === 1 && (
-        <div className="bg-black py-12">
+        <div className="pb-10 pt-10 bg-black dark:bg-white">
           <Link href="#Projects">
             {" "}
             <button
               onClick={() => handleInfo(-1)}
-              className="ml-10 md:ml-95 bg-zinc-800 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
+              className=" ml-10 md:ml-none   bg-zinc-800 text-zinc-300 text-4xl h-[50px] w-[50px] items-center justify-center flex rounded-full"
             >
               {" "}
               <FaArrowLeftLong />{" "}
             </button>{" "}
           </Link>
-          <div className="w-[40%] ml-12 md:ml-98 bg-black pt-2 md:pt-10 pb-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4">
-            <div className="">
-              <h1 className="mt-1 md:mt-10 text-zinc-300 whitespace-nowrap text-[20px] md:text-[18px]">
-                Marketing Agency
-              </h1>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="400"
-                className="rounded-lg -mt-1 relative h-[270px] w-[280px] bg-zinc-900  hover:scale-105 transform transition-all duration-100 font-semibold"
-              >
-                <Image
-                  src={project2}
-                  alt=""
-                  priority
-                  className="h-[220px] w-[250px] mt-6 pt-10 flex justify-center items-center"
-                />
-                <button
-                  onClick={() => handleInfo(0)}
-                  className="absolute bottom-0 left-0 ml-6 mb-3 mt-1 group focus:scale-110 hover:scale-105 hover:bg-gray-400 active:scale-105 flex items-center justify-center gap-2 h-[1.5rem] w-[5rem] bg-gray-200 text-zinc-900 border-1 border-gray-300 rounded-full outline-none transition-all text-xs"
-                >
-                  {" "}
-                  More Info
-                </button>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] md:w-[60%] mx-auto items-center justify-center gap-[3rem] mt-[3rem] text-zinc-300">
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="rounded-lg hover:scale-105 duration-500 mt-7 md:mt-14 md:ml-30 bg-zinc-900 w-[340px] h-[400px] md:w-[500px] md:h-[300px] "
+              className="rounded-2xl h-[300px] md:h-[380px] bg-zinc-900 dark:bg-gray-100 hover:scale-110 font-semibold text-center p-[2rem] flex justify-center items-center flex-col"
             >
-              <div className=" py-10 mt-7 md:py-1 ml-10  ">
-                <h1 className="text-2xl md:text-3xl text-zinc-200 font-semibold">
+              <Image
+                src={project2}
+                alt=""
+                priority
+                className="md:h-[220px] md:w-[250px] pt-8 md:ml-none md:pt-8"
+              />
+              <button
+                onClick={() => handleInfo(0)}
+                className=" md:mt-none  bg-zinc-300 text-zinc-800 dark:bg-zinc-900 dark:border dark:border-gray-400 dark:text-white text-[0.7rem] rounded-full w-[60px] md:w-[75px] md:h-[25px] flex justify-center items-center"
+              >
+                {" "}
+                More Info
+              </button>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-delay="400"
+              className="rounded-2xl h-[500px] md:h-[380px] bg-zinc-900 dark:bg-gray-100 hover:scale-110 font-semibold text-left mx-auto "
+            >
+              <div className="py-10 mt-7 md:py-1 ml-10  ">
+                <h1 className="text-2xl md:text-3xl text-zinc-200 dark:text-black font-semibold">
                   {" "}
                   Real Estate{" "}
-                  <span className="text-2xl md:text-3xl text-zinc-400">
+                  <span className="text-2xl md:text-3xl text-zinc-400 dark:text-zinc-600">
                     {" "}
                     Website{" "}
                   </span>{" "}
                 </h1>
-                <p className="my-3 mt-3 text-zinc-400 text-sm md:text-[15px] ">
+                <p className="my-3 mt-3 text-zinc-400 dark:text-black text-sm md:text-[15px] ">
                   Place where you can rent, buy or sell real estate.
                   <br />
                   You will be able to login using google account <br /> and
@@ -259,7 +255,7 @@ const Projects = () => {
                     className="h-20 w-20 md:h-20 md:w-22 justify-center flex rounded-full"
                   />
                   <a
-                    className="text-zinc-300 underline"
+                    className="text-zinc-300 dark:text-black underline"
                     href="https://realtor-clone-first.vercel.app/"
                   >
                     {" "}
@@ -268,7 +264,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="flex mt-5">
-                <p className="ml-10 bg-zinc-300 text-zinc-800 text-[0.7rem] rounded-full w-[50px] md:w-[75px] md:h-[25px] flex justify-center items-center">
+                <p className="ml-12 bg-zinc-300 text-zinc-800 text-[0.7rem] rounded-full w-[50px] md:w-[75px] md:h-[25px] flex justify-center items-center">
                   {" "}
                   REACT{" "}
                 </p>

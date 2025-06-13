@@ -33,10 +33,13 @@ const Services = () => {
   }, []);
 
   return (
-    <div id="Services" className="bg-black pb-[3rem] overflow-x-hidden">
+    <div
+      id="Services"
+      className="bg-black dark:bg-white pb-[3rem] overflow-x-hidden"
+    >
       <p className="ml-22 lg:ml-97 text-left pt-25 text-[28px] sm:text-[33px] md:text-[45px] font-bold">
         {" "}
-        <span className="bg-clip-text text-zinc-300 semi-bold ">
+        <span className="bg-clip-text text-zinc-300 dark:text-black semi-bold ">
           {" "}
           My Services{" "}
         </span>{" "}
@@ -45,10 +48,10 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="200"
-          className="rounded-2xl h-[400px] md:h-[380px] bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+          className="rounded-2xl h-[400px] md:h-[380px] bg-zinc-900 dark:bg-gray-100 hover:scale-110 font-semibold text-center p-[2rem]"
         >
           {" "}
-          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
+          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] dark:text-zinc-900 ">
             {" "}
             Frontend{" "}
           </h1>
@@ -56,7 +59,7 @@ const Services = () => {
             {" "}
             <Image src={frontend} alt="" width={70} />
           </div>
-          <p className="text-[15px] ">
+          <p className="text-[15px] dark:text-zinc-900 ">
             {" "}
             Gain an advantage by owning a modern website built with the latest
             technologies and solutions, taking your website—and your business—to
@@ -66,17 +69,17 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="500"
-          className="rounded-2xl h-[380px] items-center justify-center bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+          className="rounded-2xl h-[380px] items-center justify-center bg-zinc-900 dark:bg-gray-100  hover:scale-[1.1]  transition-all duration-300 font-semibold text-center p-[2rem]"
         >
           {" "}
-          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
+          <h1 className="dark:text-zinc-900 text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
             {" "}
             Azure
           </h1>
           <div className="items-center justify-center flex pb-6">
             <Image src={logo} alt="" width={70} className="" />
           </div>
-          <p className="text-[15px]">
+          <p className="text-[15px] dark:text-zinc-900">
             Microsoft Azure provides cutting-edge solutions for securing,
             backing up, and ensuring your business remains highly reliable.
           </p>
@@ -84,17 +87,17 @@ const Services = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="700"
-          className="rounded-2xl bg-zinc-900 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem] h-[380px]"
+          className="rounded-2xl bg-zinc-900 dark:bg-gray-100 hover:scale-[1.1] transition-all duration-300 font-semibold text-center p-[2rem] h-[380px]"
         >
           {" "}
-          <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
+          <h1 className="dark:text-zinc-900 text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem] ">
             {" "}
             MERN stack{" "}
           </h1>
           <div className="items-center justify-center flex pb-6">
             <Image src={project1} alt="" width={170} className="" />
           </div>
-          <p className="text-[15px] pb-4 ">
+          <p className="dark:text-zinc-900 text-[15px] pb-4 ">
             {" "}
             E-commerce website - online shop where you can sell your products
           </p>

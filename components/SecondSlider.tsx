@@ -13,10 +13,10 @@ const SecondSlider = () => {
   const images = [azure, expert, associate, cisco];
 
   return (
-    <div className="bg-black overflow-x-hidden py-20">
+    <div className="bg-black dark:bg-white overflow-x-hidden py-20 pb-50">
       <div className="relative">
         <div className=" rounded-md relative z-20 w-[80%] md:w-[60%] mx-auto">
-          <div className="bg-black md:pt-[1rem] flex md:w-[100%] mx-auto overflow-hidden rounded-lg">
+          <div className="bg-black dark:bg-gray-100 md:pt-[1rem] flex md:w-[100%] mx-auto overflow-hidden rounded-lg">
             <motion.div
               initial={{ x: 0 }}
               animate={{ x: "-100%" }}
@@ -147,7 +147,7 @@ const SecondSlider = () => {
             </motion.div>
           </div>
         </div>
-        <div className="w-[83%] md:w-[60%] mx-auto absolute -inset-1 rounded-md blur-md bg-gradient-to-br bg-gray-400 z-10"></div>
+        <div className="w-[83%] md:w-[60%] mx-auto absolute -inset-1 rounded-md blur-lg bg-gradient-to-br bg-gray-400 z-10"></div>
       </div>
     </div>
   );
