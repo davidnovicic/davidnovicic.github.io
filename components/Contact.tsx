@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="md:py-30 bg-blue-500 dark:bg-white flex flex-col-1 md:flex-cols-2"
+      className="md:py-30 bg-black dark:bg-white flex flex-col-1 md:flex-cols-2"
     >
       <div className="grid grid-col-1 md:grid-cols-2 w-[60%] justify-center mx-auto gap-[2rem]">
         <div className="flex items-center">
