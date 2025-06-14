@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-import project2 from "../public/project2.jpg";
+import marketing from "../public/marketing.jpg";
 
 import project4 from "../public/project4.jpg";
 
@@ -15,7 +15,7 @@ import Link from "next/link";
 const Projects = () => {
   const images = [
     {
-      src: project2,
+      src: marketing,
       name: "Marketing Agency",
       des: "A sleek, responsive website designed for marketing agency.",
     },
@@ -86,7 +86,7 @@ const Projects = () => {
                         src={image.src}
                         alt=""
                         priority
-                        className="h-[220px] w-[250px] mt-6 pt-10 flex justify-center items-center"
+                        className=" h-[220px] w-[250px] mt-6 pt-10 flex justify-center items-center"
                       />
                       <button
                         onClick={() => handleInfo(index)}
@@ -122,7 +122,7 @@ const Projects = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="400"
-              className="rounded-lg hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 dark:bg-gray-100 w-[340px] h-[350px] md:w-[450px] md:h-[350px] "
+              className="rounded-lg hover:scale-105 transform transition-all duration-100 mt-2 ml-8 md:-ml-7 bg-zinc-900 dark:bg-gray-100 w-[300px] h-[380px] md:w-[450px] md:h-[350px] "
             >
               <div className=" mt-10 ml-10">
                 <h1 className="text-xl md:text-3xl text-zinc-200 dark:text-black font-semibold">
@@ -141,7 +141,7 @@ const Projects = () => {
                 </p>
                 <div className="flex items-center -mt-5 -ml-5 md:-ml-10">
                   <Image
-                    src={project2}
+                    src={marketing}
                     alt=""
                     className="h-40 w-50 justify-center flex rounded-full"
                   />
@@ -214,7 +214,7 @@ const Projects = () => {
               className="rounded-2xl h-[300px] md:h-[380px] bg-zinc-900 dark:bg-gray-100 hover:scale-110 font-semibold text-center p-[2rem] flex justify-center items-center flex-col"
             >
               <Image
-                src={project2}
+                src={marketing}
                 alt=""
                 priority
                 className="md:h-[220px] md:w-[250px] pt-8 md:ml-none md:pt-8"

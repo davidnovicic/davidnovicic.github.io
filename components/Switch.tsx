@@ -8,17 +8,20 @@ import { IoIosSunny } from "react-icons/io";
 type Theme = "light" | "dark";
 
 const Switch = () => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
+
       document.documentElement.classList.add("dark");
+      window.localStorage.setItem("theme", "dark");
     } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
+      if (theme === "dark") {
+        setTheme("light");
+        window.localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove("dark");
+      }
     }
   };
 
@@ -27,6 +30,11 @@ const Switch = () => {
 
     if (localTheme) {
       setTheme(localTheme);
+      if (localTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else if (localTheme === "light") {
+        document.documentElement.classList.remove("dark");
+      }
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
       document.documentElement.classList.add("dark");

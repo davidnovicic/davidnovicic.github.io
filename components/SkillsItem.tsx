@@ -10,15 +10,15 @@ interface Props {
 
 const SkillsItem = ({ title, year, des, moreInfo, stateInfo }: Props) => {
   return (
-    <div className=" mt-15 md:mt-15 ml-10 mb-10 items-center justify-center ">
-      <span className=" px-[2rem] text-zinc-300 dark:text-black py-[0.9rem] font-bold text-[20px] border-[2px]">
+    <div className=" mt-15 md:mt-15 ml-10 mb-10 flex flex-col items-left ">
+      <span className=" px-[1rem] py-[0.5rem] text-zinc-300 dark:text-black font-bold text-[20px] border-[2px] dark:border-gray-400 overflow-hidden text-clip text-wrap w-fit">
         {year}
       </span>
-      <h1 className=" capitalize font-semibold mb-[1rem] mt-9 text-[20px] sm:text-[25px] md:text-[25px] text-zinc-300 dark:text-black ">
+      <h1 className="mt-5 capitalize font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[25px] text-zinc-300 dark:text-black ">
         {title}
       </h1>
       <p
-        className={`pt-2 text-zinc-300 dark:text-black font-normal w-[80%] md:text-[17px] opacity-80 ${
+        className={`w-[80%] pt-2 text-zinc-300 dark:text-black font-normal md:text-[17px] opacity-80 ${
           stateInfo ? "line-clamp-3" : ""
         }`}
       >

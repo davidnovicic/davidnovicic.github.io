@@ -13,13 +13,13 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="md:py-30 bg-black dark:bg-white flex flex-col-1 md:flex-cols-2"
+      className="md:py-30 bg-blue-500 dark:bg-white flex flex-col-1 md:flex-cols-2"
     >
-      <div className=" mx-auto grid grid-col-1 md:grid-cols-2 w-[60%]">
-        <div className="flex place-items-center">
+      <div className="grid grid-col-1 md:grid-cols-2 w-[60%] justify-center mx-auto gap-[2rem]">
+        <div className="flex items-center">
           <div className="absolute z-10 flex flex-col ml-12 mt-17 ">
-            <div className="flex -ml-5 md:ml-5">
-              <div className=" md:w-[6.5.rem] md:h-[6.5rem] w-[5rem] h-[5rem]  rounded-full">
+            <div className="flex -ml-5 md:ml-5 w-fit">
+              <div className=" md:w-[6.5.rem] md:h-[6.5rem] w-[5rem] h-[5rem]">
                 <FaMapMarkedAlt className="md:w-[4rem] md:h-[2rem] w-[2.5rem] h-[2.5rem] text-white" />
               </div>
               <div>
@@ -27,7 +27,7 @@ const Contact = () => {
                   {" "}
                   Address{" "}
                 </h1>
-                <p className=" text-[12px] md:text-[17px] text-white opacity-60 dark:text-white dark:opacity-90">
+                <p className="text-[12px] md:text-[17px] text-white opacity-60 dark:text-white dark:opacity-90 w-fit">
                   Ratka Mitrovica 56
                 </p>
               </div>
@@ -72,7 +72,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="py-30 -ml-3 flex flex-col md:w-[450px] md:h-[600px] ">
+        <div className="py-30 flex flex-col md:h-[600px] ">
           <h2 className="text-4xl text-white mt-15 dark:text-black">
             {" "}
             Contact Me{" "}
